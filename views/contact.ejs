@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact | Web Developer</title>
+        <link rel="stylesheet" type="text/CSS" href="/css/style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navigation">
+
+                <a href="/" class="home_btn">
+                    <img src="/images/logo.png" alt="Bahakae Precious Solomon logo" class="logo">
+                </a>
+
+                <ul class="navigation_links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Me</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/contact" class="active">Contact Me</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="contact_info">
+
+            <section class="container">
+
+                <h1 class="contact_intro">I'd like to hear from you!</h1>
+
+                <p class="contact_paragraph">
+                    <em>Please use the contact form if you have any <br> inquiries or if you want to say hi.</em>
+                </p>
+
+                <div class="links">
+
+                    <a href="mailto:solomonprecious04@gmail.com">
+                        <img src="/images/email.png" alt="Gmail" class="email_icon"/>
+                    </a>
+
+                    <a href="https://github.com/Precious-B" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/github.png" alt="Github" class="git_icon"/>
+                    </a>
+
+                    <a href="https://bw.linkedin.com/in/bahakae-precious-solomon-01708a1b0" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/linkedin.png" alt="LinkedIn" class="linkedin_icon"/>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="container2">
+
+                <h1 class="contact_title">Contact Me</h1>
+
+                <!-- Success message -->
+                <% if (success) { %>
+                    <p class="success-message">
+                        Your message has been sent successfully!
+                    </p>
+                <% } %>
+
+                <div class="contact_form">
+
+                    <form action="/contact" method="POST">
+
+                        <div class="form_info">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form_info">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form_info">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form_info">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Bahakae Precious Solomon. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>

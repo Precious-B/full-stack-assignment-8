@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio | Web Developer</title>
+        <link rel="stylesheet" type="text/CSS" href="/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navigation">
+                <a href="/" class="home_btn">
+                    <img src="/images/logo.png" alt="Bahakae Precious Solomon logo" class="logo">
+                </a>
+
+                <ul class="navigation_links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Me</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/portfolio" class="active">Portfolio</a></li>
+                    <li><a href="/contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="portfolio_cards">
+                <h1 class="portfolio_title">My Portfolio</h1>
+
+                <div class="portfolio_projects">
+
+                    <div class="top_row">
+
+                        <% projects.slice(0, 2).forEach(project => { %>
+
+                            <div class="card">
+                                <h3><%= project.title %></h3>
+
+                                <img src="<%= project.image %>"
+                                     alt="<%= project.title %>"
+                                     class="project-image" />
+
+                                <p><%= project.description %></p>
+                            </div>
+
+                        <% }) %>
+
+                    </div>
+
+                    <div class="bottom_row">
+
+                        <% projects.slice(2, 4).forEach(project => { %>
+
+                            <div class="card">
+                                <h3><%= project.title %></h3>
+
+                                <img src="<%= project.image %>"
+                                     alt="<%= project.title %>"
+                                     class="project-image" />
+
+                                <p><%= project.description %></p>
+                            </div>
+
+                        <% }) %>
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Bahakae Precious Solomon. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>
